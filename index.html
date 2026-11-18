@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Chair Standing — prototype</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640" aria-label="Last Chair Standing game canvas"></canvas>
+
+  <div id="hub" class="panel">
+    <h1>LAST CHAIR STANDING</h1>
+    <p class="sub">Prototype v0.1 · Boss: <b>Maestro Grumble</b> — musical chairs, but he wants you crushed.</p>
+    <div class="cols">
+      <div>
+        <h2>Fight setup</h2>
+        <div class="row">Tier: <button id="tierDown" aria-label="lower tier">◀</button> <b id="tierLbl">1</b> <button id="tierUp" aria-label="higher tier">▶</button> <span id="tierNote" class="dim"></span></div>
+        <div class="row"><label><input type="checkbox" id="encore"> <b>★ ENCORE</b> — boss +40% HP &amp; damage · win = 4 loot rolls, legendary base 8%</label></div>
+        <div class="row"><label><input type="checkbox" id="shakeHalf"> Reduce camera shake to 50%</label></div>
+        <button id="startBtn" class="big">▶ START FIGHT (Enter)</button>
+        <h2>How to play</h2>
+        <ul class="how">
+          <li><b>WASD</b> move · <b>Mouse</b> aim · <b>Left click / J</b> swing · <b>Space</b> dash · <b>Right click / K</b> shove</li>
+          <li>Every 10 s (16 beats) <b>the music stops</b>: a slam throws you somewhere random, time slows, chairs appear, the Ushers race you for them. Freeze… then <b>SHATTER</b> hits everyone without a chair.</li>
+          <li>Shove or kill an Usher to steal its chair. Boss changes phase at 66% and 33%. +15% boss damage every 30 s.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Your gear</h2>
+        <div id="gear"></div>
+        <div id="stats" class="dim"></div>
+        <button id="resetBtn" class="small">Reset save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="results" class="panel hidden">
+    <h1 id="resTitle">RESULTS</h1>
+    <div id="progressWrap"><div id="progressBar"><div id="progressFill"></div><div class="mark" style="left:34%"></div><div class="mark" style="left:67%"></div></div>
+      <div class="plabels"><span>Phase 1</span><span>Phase 2</span><span>Phase 3</span><span>★</span></div></div>
+    <p id="resText"></p>
+    <h2>Loot</h2>
+    <div id="drops"></div>
+    <p class="dim">Click an item (or press its number) to equip it. Unequipped drops are salvaged.</p>
+    <button id="contBtn" class="big">Continue (Enter)</button>
+  </div>
+</div>
+<script src="js/audio.js"></script>
+<script src="js/loot.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

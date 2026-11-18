@@ -1,0 +1,108 @@
+{
+ "trials": [
+  {
+   "won": false,
+   "time": 48.6,
+   "bossPct": 34.5,
+   "playerHp": -30,
+   "phase": 2,
+   "shatters": 5,
+   "dmg": {
+    "note": 36,
+    "usher": 24,
+    "shatter": 70
+   },
+   "events": [
+    "normal",
+    "warn",
+    "slam",
+    "fermata",
+    "hold",
+    "shatter",
+    "after"
+   ]
+  },
+  {
+   "won": false,
+   "time": 33.9,
+   "bossPct": 57.9,
+   "playerHp": -2,
+   "phase": 2,
+   "shatters": 3,
+   "dmg": {
+    "note": 31,
+    "usher": 36,
+    "shatter": 35
+   },
+   "events": [
+    "normal",
+    "warn",
+    "slam",
+    "fermata",
+    "hold",
+    "shatter",
+    "after"
+   ]
+  },
+  {
+   "won": false,
+   "time": 40.7,
+   "bossPct": 50.6,
+   "playerHp": -1,
+   "phase": 2,
+   "shatters": 4,
+   "dmg": {
+    "note": 26,
+    "usher": 40,
+    "shatter": 35
+   },
+   "events": [
+    "normal",
+    "warn",
+    "slam",
+    "fermata",
+    "hold",
+    "shatter",
+    "after"
+   ]
+  },
+  {
+   "won": false,
+   "time": 20.7,
+   "bossPct": 73.8,
+   "playerHp": -3,
+   "phase": 1,
+   "shatters": 2,
+   "dmg": {
+    "note": 25,
+    "shatter": 70,
+    "usher": 8
+   },
+   "events": [
+    "normal",
+    "warn",
+    "slam",
+    "fermata",
+    "hold",
+    "shatter",
+    "after"
+   ]
+  },
+  {
+   "win_path": {
+    "won": true,
+    "time": 12.6,
+    "phase": 3,
+    "unlocked": 2
+   },
+   "drops_shown": "1. [Common] boots (ilvl 7) \u2014 21 armor (\u25b2 vs equipped)\n2. [Rare] weapon (ilvl 7) \u2014 29 dmg (\u25b2 vs equipped)"
+  }
+ ],
+ "realtime_state_at_screenshot": {
+  "event": "fermata",
+  "chairs": 2,
+  "ushers": 1,
+  "t": 6.816200000000033
+ },
+ "errors": []
+}
